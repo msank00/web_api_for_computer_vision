@@ -4,6 +4,8 @@
 
 - Here I have simplified it, and used a dummy simple random prediction model as a baseline just to create the web framework. The idea is, this project can be reused for other actual computer vision project to showcase your work.  
 
+![image](static/web_look.png)
+
 - Feel free to use it.
 
 ----

@@ -14,7 +14,7 @@ import random
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = "/home/sankarshan/Documents/code/web_framework_for_data_science/static"
+UPLOAD_FOLDER = "/home/sankarshan/Documents/code/web_api_for_computer_vision/static"
 
 # GET: accessing the website
 # POST: accessing the form
