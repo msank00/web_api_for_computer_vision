@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>Image Classification</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/form_upload.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <div class="bg">
+        <form class="form-upload" method=post enctype=multipart/form-data>
+            <h1 class="h3 mb-3 font-weight-normal">Please upload image</h1>
+            <input type="file" id="image" name="image" class="form-control" required autofocus> 
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Predict</button>
+            <br>
+            {% if image_file %}
+              <img class="mb-4" src="static/{{image_file}}" alt="" width="200" height="200">
+              <h3 class="h3 mb-3 font-weight-normal">Prediction class: {{prediction_class}}</h3>
+              <h2 class="h3 mb-3 font-weight-normal">Prediction probability: {{prediction_proba}}</h2>   
+            {%endif%}
+          </form>
+    </div>
+    
+  </body>
+</html>
