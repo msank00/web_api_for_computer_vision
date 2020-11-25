@@ -8,4 +8,9 @@
 
 - Feel free to use it.
 
+## How to start
+
+- update the variable `UPLOAD_DIRECTORY` in the api.py script.
+- Run `python api.py`
+
 ----
